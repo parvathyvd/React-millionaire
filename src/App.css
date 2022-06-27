@@ -11,7 +11,7 @@ html{
   font-size: 62.5%;
 }
 .app{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background: #020230;
   color: #fff;
@@ -25,7 +25,7 @@ html{
   flex-direction: column;
 }
 .top{
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
 }
 .timer{
@@ -43,7 +43,8 @@ html{
   left: 5rem;
 }
 .bottom{
-  height: 30vh;
+  min-height: 30vh;
+  margin-top: 3rem;
 }
 .trivia{
   width: 100%;
@@ -150,4 +151,27 @@ padding: 0.5rem 2rem;
 }
 .endQuestion{
   font-size: 2.5rem;
+}
+
+@media screen and (max-width:1000px) {
+  .app{
+    flex-direction: column;
+  }
+  .pyramid{
+    margin-top: 3rem;
+    text-align: center;
+
+  }
+  .endQuestion{
+    text-align: center;
+  }
+  .question{
+    font-size: 2rem;
+  }
+  .answers{
+    margin-top: 3rem;
+  }
+  .answer{
+    font-size: 2rem;
+  }
 }
